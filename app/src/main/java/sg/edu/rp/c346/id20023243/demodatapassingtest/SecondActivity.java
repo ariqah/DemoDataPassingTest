@@ -18,15 +18,8 @@ public class SecondActivity extends AppCompatActivity {
         tvAnswer = findViewById(R.id.textView);
         Intent intentReceived = getIntent();
 
-        int iValue = intentReceived.getIntExtra("value1", -1);
+        int iValue = intentReceived.getIntExtra("value", -1);
         tvAnswer.setText("Integer value is: "+ iValue);
-
-        char cValue = intentReceived.getCharExtra("value2",'z');
-        tvAnswer.setText("Char value is: "+cValue);
-
-        double dValue = intentReceived.getDoubleExtra("value3", 66.9);
-        tvAnswer.setText("Double value is: "+ dValue);
-
 
     }
 }
